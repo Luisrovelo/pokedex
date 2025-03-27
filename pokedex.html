@@ -1,0 +1,156 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Pokédex</title>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                }
+                h1 {
+                    color: #e63946;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background: white;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    border-radius: 8px;
+                    overflow: hidden;
+                }
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }
+                th {
+                    background-color: #457b9d;
+                    color: white;
+                    font-weight: bold;
+                }
+                tr:nth-child(even) {
+                    background-color: #f8f9fa;
+                }
+                tr:hover {
+                    background-color: #e9ecef;
+                }
+                img.pokemon-img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    transition: transform 0.2s;
+                }
+                img.pokemon-img:hover {
+                    transform: scale(1.1);
+                }
+                .nuevo {
+                    animation: highlight 2s;
+                }
+                @keyframes highlight {
+                    from { background-color: #a7c957; }
+                    to { background-color: transparent; }
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Pokédex (9 Pokémon)</h1>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Tipos</th>
+                    <th>HP</th>
+                    <th>Ataque</th>
+                </tr>
+        
+                <tr>
+                    <td>1</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur"></td>
+                    <td>Bulbasaur</td>
+                    <td>Grass, Poison</td>
+                    <td>45</td>
+                    <td>49</td>
+                </tr>
+            
+                <tr>
+                    <td>2</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur"></td>
+                    <td>Ivysaur</td>
+                    <td>Grass, Poison</td>
+                    <td>60</td>
+                    <td>62</td>
+                </tr>
+            
+                <tr>
+                    <td>3</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur"></td>
+                    <td>Venusaur</td>
+                    <td>Grass, Poison</td>
+                    <td>80</td>
+                    <td>82</td>
+                </tr>
+            
+                <tr class="nuevo">
+                    <td>12</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Butterfree"></td>
+                    <td>Butterfree</td>
+                    <td>Bug, Flying</td>
+                    <td>60</td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td>25</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu"></td>
+                    <td>Pikachu</td>
+                    <td>Electric</td>
+                    <td>35</td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td>132</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="Ditto"></td>
+                    <td>Ditto</td>
+                    <td>Normal</td>
+                    <td>48</td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td>133</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" alt="Eevee"></td>
+                    <td>Eevee</td>
+                    <td>Normal</td>
+                    <td>55</td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td>150</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" alt="Mewtwo"></td>
+                    <td>Mewtwo</td>
+                    <td>Psychic</td>
+                    <td>106</td>
+                    <td>110</td>
+                </tr>
+            
+                <tr>
+                    <td>384</td>
+                    <td><img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png" alt="Rayquaza"></td>
+                    <td>Rayquaza</td>
+                    <td>Dragon, Flying</td>
+                    <td>105</td>
+                    <td>150</td>
+                </tr>
+            
+            </table>
+        </body>
+        </html>
+        
